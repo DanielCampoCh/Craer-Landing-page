@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bungee&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-landing" id="inicio">
+        <div class="wrap-logo">
+            <img src="img/perfil-logo.svg" alt="lOGO" class="logo-header">
+        </div>
+            <div class="menu-header-section">
+                <div class="wrap-menu-header-section">
+                    <ul>
+                        <li><a href="#inicio">inicio</a></li>
+                        <li><a href="#categorias">Servicios</a></li>
+                        <li><a href="#Que-somos?">Quienes Somos</a></li>
+                        <li><a href="#contactar">Contactos</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+    </header>
+
+    <section class="hero-section">
+        <div class="wrap-hero-section">
+            <h1>Hardware de Alto Rendimiento & Desarrollo a la Medida</h1>
+            <p>Potenciamos el crecimiento de tu empresa. Ensamblamos estaciones de trabajo con tecnología de punta y creamos soluciones web escalables para que tu negocio nunca se detenga.</p>
+            <div class="wrap-cta">
+                <a href="#categorias" class="cta-a">Ver catálogo de servicios</a>
+            </div>
+        </div>
+    </section>
+    <section class="section logo-section">
+        <h2>Trabajamos con las mejores marcas del mercado</h2>
+        <div class="wrap-logo-section">
+            <img src="img/cisco (1).svg" alt="" class="logo-brand">
+            <img src="img/logo-asus_1.svg" alt="" class="logo-brand">
+            <img src="img/logo-dell_1.svg" alt="" class="logo-brand">
+            <img src="img/logo-HP_1.svg" alt="" class="logo-brand">
+            <img src="img/logo-lenovo_1.svg" alt="" class="logo-brand">
+        </div>
+    </section>
+        <section class="section servicios-section" id="categorias">
+            <div class="wrap-wrap-title-section">
+                <h2>Categorias de servicios</h2>
+            </div>
+            <div class="wrap-servicios-section">
+                <a href="" class="item-servicios-section">
+                    <img src="img/Estaciones de Trabajo Pro.png" alt="">
+                        <p>Estaciones de Trabajo Pro</p>
+                </a>
+                <a href="" class="item-servicios-section">
+                    <img src="img/Desarrollo Web Frontend.png" alt="">
+                        <p>Desarrollo Web Frontend</p>
+                </a>               
+                <a href="" class="item-servicios-section">
+                    <img src="img/Servidores e Infraestructura.png" alt="">
+                        <p>Servidores e Infraestructura</p>
+                </a>
+                <a href="" class="item-servicios-section">
+                    <img src="img/Soporte Técnico Empresarial.png" alt="">
+                        <p>Soporte Técnico Empresarial</p>
+                </a>
+                <a href="" class="item-servicios-section">
+                    <img src="img/portatil.png" alt="">
+                        <p>Portátiles</p>
+                </a>
+                <a href="" class="item-servicios-section">
+                    <img src="img/Automatización de Procesos.png" alt="">
+                        <p>Automatización de Procesos</p>
+                </a>
+                <a href="" class="item-servicios-section">
+                    <img src="img/Instalacion de infrastructura red.png" alt="">
+                        <p>Instalacion de infrastructura red</p>
+                </a>
+                <a href="" class="item-servicios-section">
+                    <img src="img/Software a la medida.png" alt="">
+                        <p>Software a la medida</p>
+                </a>
+                <a href="" class="item-servicios-section">
+                    <img src="img/Equipos de red.png" alt="">
+                        <p>Equipos de red</p>
+                </a>
+            </div>
+        </section>
+        <section class="section two-column-section" id="Que-somos?">
+            <div class="wrap-title-section">
+                <h2>Categorias de nuestros servicios</h2>
+            </div>
+            <div class="wrap-img_two-column">
+                <div class="wrap-text-column">
+                    <h3>¿Por qué confiar en Daniel?</h3>
+                    <p >No somos solo una tienda, somos tu departamento de tecnología. Ya sea que necesites renovar tus equipos con procesadores de alta capacidad para tareas pesadas, o requieras construir una plataforma web desde cero con código limpio y estructurado, nuestro equipo técnico te acompaña de principio a fin.</p>
+                    <div class="wrap-two-column">
+                        <div class="wrap-img_two-column">
+                            <img src="img/caracteristica.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="wrap-cta">
+                        <a href="#contactar" class="cta-a">Hablar con un asesor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section two-column-section form" id="contactar">
+            <div class="wrap-title-section">
+                <h2>Formulario de contacto</h2>
+            </div>
+            <div class="wrap-two-column">
+                <div class="wrap-img_two-column">
+                    <div class="wrap-text-column">
+                        <h3>Inicia tu transformación digital hoy</h3>
+                            <form action="procesar_formulario.php" method="post" class="form">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" name="nombre" id="nombre" required="">
+                                <br><br>
+                
+                                <label for="asunto">Asunto:</label>
+                                <input type="text" name="asunto" id="asunto" required="">
+                                <br><br>
+                
+                                <label for="mensaje">Mensaje:</label>
+                                <br>
+                                <textarea name="mensaje" id="mensaje" rows="4" cols="40" required=""></textarea>
+                                <br><br>
+                
+                                <input type="submit" value="Enviar" class="cta-a" >
+                            </form>              
+                    </div>
+                </div>
+                <div class="wrap-img_two-column">
+                    <img src="img/Contactanos.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="warp-footer-section">
+                <div class="wrap-social-logos">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img src="img/Logo_de_Facebook.png" alt="" class="social-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img src="img/instalgram.png" alt="" class="social-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://web.whatsapp.com/">
+                                <img src="img/Whatsappt.svg" alt="" class="social-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.x.com">
+                                <img src="img/twitter.jpg" alt="" class="social-logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-footer-section">
+                    <div class="wrap-menu-footer-section">
+                        <ul>
+                            <li><a href="#inicio">inicio</a></li>
+                            <li><a href="#categorias">Servicios</a></li>
+                            <li><a href="#Que-somos?">Quienes Somos</a></li>
+                            <li><a href="#contactar">Contactos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-footer-section">
+                <div class="footer-creds">
+                    <p>@copytinght 2026 -dchcampo@gmail.com.co - Todos los drechos reservados</p>
+                </div>
+            </div>
+        </footer>
+
+        
+
+
+</body>
+</html>

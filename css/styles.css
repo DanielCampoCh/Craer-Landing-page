@@ -1,0 +1,332 @@
+:root {
+  /* Paleta de Colores Dark Tech */
+  --bg-color: #0f172a;       /* Azul oscuro para el fondo */
+  --card-bg: #1e293b;        /* Azul un poco más claro para secciones/tarjetas */
+  --text-main: #f8fafc;      /* Texto claro */
+  --text-muted: #94a3b8;     /* Texto secundario (para párrafos) */
+  --main-c: #fdd72d;         /* Tu amarillo para botones (¡hace un contraste genial!) */
+  --main-hover: #eab308;     /* Amarillo un poco más oscuro al pasar el mouse */
+  
+  --border-r: 8px;           /* Bordes más suaves */
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); /* Sombra moderna */
+}
+
+/** Estilos Generales **/
+html, body {
+  overflow-x: hidden; /* Esto es un salvavidas: esconde cualquier cosa que se salga por los lados */
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+}
+
+html * {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box; /* VITAL: Hace que los bordes y paddings se calculen Hacia ADENTRO, no hacia afuera */
+}
+
+img {
+  max-width: 100%; /* Garantiza que NINGUNA imagen en toda tu página sea más grande que su contenedor */
+  height: auto;
+}
+
+
+p{
+  font-size: 1.1rem;
+  font-family: "Exo 2", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  font-family: "Exo 2", sans-serif;
+  color: #f2f2f2;
+}
+
+ul, li{
+  list-style: none;
+  font-family: "Exo 2", sans-serif;
+}
+
+.wrap-cta{
+  padding: 1.5rem 0;
+}
+
+.cta-a{
+  color: #0f172a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: var(--main-c);
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-r);
+  transition: all 0.3s ease; /* Hace que el cambio de color sea suave */
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(253, 215, 45, 0.2);
+}
+
+.cta-a:hover {
+  background-color: var(--main-hover);
+  transform: translateY(-2px); /* El botón "sube" un poquito al pasar el mouse */
+}
+
+h1{
+  font-size: 2.2rem;
+  font-family: "Bungee", sans-serif;
+}
+h2{
+  font-size: 1.5rem;
+  font-family: "Bungee", sans-serif;
+}
+h3{
+  font-size: 2.2rem;
+  font-family: "Smooch Sans", sans-serif;
+}
+
+/** Header **/
+
+.header-landing{
+  display: flex;
+  background: #ffff(0, 0%, 100%, 0);
+  padding: 0.25rem;
+  justify-content: center;
+}
+
+.logo-header{
+  max-width: 80px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+
+}
+
+/** Hero Section **/
+
+.hero-section{
+  height: 90vh;
+  background: url(../img/img-hero-agencia.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(87, 150, 189, 0.7);
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap-hero-section{
+  width: 100%; /* Ocupa el ancho disponible... */
+  max-width: 1000px; /* ...pero hasta un máximo de 1000px */
+  color: #fff;
+  padding: 3rem 2rem; /* Relleno mucho más equilibrado */
+  text-align: center; /* Centramos el texto para que se vea profesional */
+}
+
+.wrap-hero-section p {
+    max-width: 800px;
+    margin: 0 auto; /* Centra el párrafo dentro de la caja */
+    padding-bottom: 1.5rem;
+}
+/** Logo Brand Section **/
+.section {
+  margin: 5rem 0;
+}
+.section h2{
+  padding: 2rem 0;
+}
+
+.wrap-logo-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Esto evitará que se peguen en pantallas pequeñas */
+}
+
+.logo-brand{
+  width: 200px;
+  padding: 1rem 2rem;
+  filter: grayscale(1);
+  border: 1px solid white;
+}
+
+/** Wrap Title **/
+
+.wrap-title-section{
+  display: flex;
+  justify-content: center;
+  margin: 3rem 1rem;
+}
+
+/** Servicios Section **/
+
+.wrap-servicios-section{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.item-servicios-section{
+  background-color: var(--card-bg); /* Fondo propio para la tarjeta */
+  padding: 1.5rem;
+  border-radius: var(--border-r);
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.item-servicios-section:hover {
+  transform: translateY(-10px); /* La tarjeta salta hacia arriba */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5); /* La sombra se hace más grande */
+}
+
+.item-servicios-section p {
+    color: var(--text-main);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.item-servicios-section img{
+  width: 300px;
+  height: 225px;
+}
+
+/** Two Columns Section **/
+
+.wrap-two-column{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrap-img_two-column{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.wrap-text-column h3{
+  padding: 2rem 0;
+}
+
+.wrap-text-column p{
+  padding-bottom: 1rem;
+}
+
+/** Form Section **/
+
+section.two-column-section.form{
+  padding: 3rem 0;
+}
+
+.form input, .form textarea{
+  display: flex;
+  width: 100%;
+  line-height: 1.75rem;
+  border: 1.5px solid #fff;
+  border-radius: var(--border-r);
+}
+
+.form textarea{
+  min-height: 200px;
+}
+
+input[type="submit"]{
+  border: 0;
+  display: inline;
+  cursor: pointer;
+}
+
+/** Footer **/
+
+.footer-section{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-footer-section{
+  padding: 1rem 0;
+}
+
+.menu-haader-section{
+  padding: 1rem 0;
+}
+
+.wrap-menu-header-section ul{
+  display: flex;
+  justify-content: center;
+}
+.wrap-menu-header-section ul li{
+  font-size: 1.1rem;
+  padding: 1.5rem;
+}
+
+.wrap-social-logos ul, .wrap-menu-footer-section ul{
+  display: flex;
+  justify-content: center;
+}
+
+.social-logo{
+  max-width: 75px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.wrap-menu-footer-section ul li{
+  font-size: 1.1rem;
+  padding: 1.5rem;
+}
+
+.footer-creds{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Hacemos que la grilla pase de 2 a 1 columna */
+    .wrap-two-column {
+        display: flex; /* Cambiamos a flex para mayor control en móviles */
+        flex-direction: column;
+    }
+
+    /* Arreglamos el texto gigante de la portada */
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .wrap-hero-section {
+        padding: 2rem 1rem; /* Usamos rem en lugar de % para evitar desbordes */
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem; }
+
+    /* Ajuste de Logos para que quepan bien */
+    .wrap-logo-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .logo-brand {
+        width: 100px;
+        padding: 0.5rem;
+    }
+
+    /* Las imágenes de servicios y formulario se ajustan al 100% del ancho del cel */
+    .item-servicios-section img,
+    .wrap-img_two-column img,
+    .form input, 
+    .form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+}
