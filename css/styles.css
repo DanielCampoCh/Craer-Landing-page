@@ -47,6 +47,10 @@ ul, li{
   font-family: "Exo 2", sans-serif;
 }
 
+label {
+  font-family: "Exo 2", sans-serif;
+}
+
 .wrap-cta{
   padding: 1.5rem 0;
 }
