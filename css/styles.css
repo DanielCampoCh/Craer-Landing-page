@@ -149,8 +149,6 @@ h3{
 .logo-brand{
   width: 200px;
   padding: 1rem 2rem;
-  filter: grayscale(1);
-  border: 1px solid white;
 }
 
 /** Wrap Title **/
